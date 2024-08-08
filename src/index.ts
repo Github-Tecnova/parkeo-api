@@ -1,9 +1,6 @@
 import express, { Request, Response } from "express";
-import dotenv from "dotenv";
 import webhookRoutes from "./routes/webhookRoutes";
 import { PrismaClient } from "@prisma/client";
-
-dotenv.config();
 
 const prisma = new PrismaClient();
 const app = express();
