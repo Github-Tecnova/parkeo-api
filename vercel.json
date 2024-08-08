@@ -6,11 +6,11 @@
       "use": "@vercel/node"
     }
   ],
-  "buildCommand": "npm run build && npx prisma generate",
+  "buildCommand": "npx prisma generate && npm run build",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/index.ts"
+      "dest": "/dist/index.js"
     }
   ]
 }
